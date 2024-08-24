@@ -12,7 +12,8 @@
     "eslint": "next lint --fix --dir src",
     "prettier": "prettier --write .",
     "eplint": "yarn eslint && yarn prettier",
-    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore"
+    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,md,ts,tsx,html,css,scss}": "yarn prettier",
